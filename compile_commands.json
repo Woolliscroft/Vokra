@@ -1,0 +1,13 @@
+[
+  {
+    "directory": "/home/woolly/Documents/Vokra",
+    "command": "/usr/bin/gcc -Wall -Wextra -O2 -g -std=c11 -Iinclude -I/usr/include -I/usr/include/glm -pthread -c main.c -o main.o",
+    "file": "main.c"
+  },
+  {
+    "directory": "/home/woolly/Documents/Vokra",
+    "command": "/usr/bin/gcc -Wall -Wextra -O2 -g -std=c11 -Iinclude -I/usr/include -I/usr/include/glm -pthread -c src/glad.c -o src/glad.o",
+    "file": "src/glad.c"
+  }
+]
+
