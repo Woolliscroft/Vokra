@@ -6,7 +6,7 @@
 VkState state;
 
 void render() {
-    vk_renderRect(&state, 0.1f, 0.2f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f); // green rectangle
+    vk_renderRect(&state, 0.1f, 0.2f, 0.5f, 0.5f, RED); // green rectangle
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {

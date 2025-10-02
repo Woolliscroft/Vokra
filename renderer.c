@@ -91,7 +91,7 @@ void vk_begin(VkState* state) {
 }
 
 // Draw a rectangle with color
-void vk_renderRect(VkState* state, float x, float y, float w, float h, float r, float g, float b) {
+void vk_renderRect(VkState* state, float x, float y, float w, float h, Colour color) {
     glUseProgram(state->shaderProgram);
 
     GLint uOffset = glGetUniformLocation(state->shaderProgram, "uOffset");
@@ -100,7 +100,7 @@ void vk_renderRect(VkState* state, float x, float y, float w, float h, float r, 
 
     glUniform2f(uOffset, x, y);
     glUniform2f(uScale, w, h);
-    glUniform3f(uColor, r, g, b);
+    glUniform3f(uColor, color.r, color.g, color.b);
 
     glBindVertexArray(state->vao);
     glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
