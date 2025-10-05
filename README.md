@@ -12,5 +12,6 @@
 - Include the header in any file where you want to use Vokra functionality.
 
 ## DEPENDENCIES
-- Requires **GLAD**.
+- Requires **GLAD**, and **OpenGL Version 3.3+** due to shaders.
 - Optionally tested with **GLFW** for OpenGL context and window creation.
+- Requires stb_image.h for TextureLoading, only the header file.
